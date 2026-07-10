@@ -7,7 +7,7 @@ verified end-to-end.** Docker image is written but not build-tested locally
 see `guide.md` in the FinDocGPT repo for the full phased plan.
 
 A planning-and-tool-use agent that decomposes multi-step financial research
-questions and orchestrates [FinDocGPT](../findocgpt) -- a hybrid-search RAG
+questions and orchestrates [FinDocGPT](https://github.com/Anuj-3003/FinDocGPT) -- a hybrid-search RAG
 system -- as a composed tool, called over HTTP rather than imported as code,
 with self-verification against retrieved sources before it hands back an
 answer.
