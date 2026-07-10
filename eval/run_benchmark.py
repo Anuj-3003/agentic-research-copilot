@@ -21,18 +21,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from agent.graph import arun
+from eval.scoring import score_correctness
 import asyncio
-
-DECLINE_MARKERS = [
-    "no mention", "not available", "could not be determined", "insufficient",
-    "wasn't able", "don't have", "does not contain", "no information",
-    "not mentioned", "doesn't contain", "unable to",
-]
-
-
-def _fact_group_matched(group: list[str], text: str) -> bool:
-    text_l = text.lower()
-    return any(alt.lower() in text_l for alt in group)
 
 
 def score_question(item: dict, result: dict) -> dict:
@@ -42,15 +32,7 @@ def score_question(item: dict, result: dict) -> dict:
     tool_results = result["tool_results"]
     category = item["category"]
 
-    if category == "out_of_scope":
-        declined = any(m in final_output.lower() for m in DECLINE_MARKERS)
-        correctness = 1.0 if declined else 0.0
-        hallucinated = not declined
-    else:
-        groups = item["expected_facts"]
-        matched = sum(1 for g in groups if _fact_group_matched(g, final_output))
-        correctness = matched / len(groups) if groups else 1.0
-        hallucinated = False
+    correctness, hallucinated = score_correctness(category, item.get("expected_facts", []), final_output)
 
     # Citation accuracy: every claim's source_ref must trace back to a real,
     # non-errored tool call -- catches the aggregator/finalize inventing a

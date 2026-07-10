@@ -67,9 +67,14 @@ guessing. Full breakdown and categorized failures in
 `eval/failure_analysis.md`.
 
 ```bash
-python -m eval.run_benchmark       # re-run (resumes from eval/benchmark_results.json)
-python -m eval.failure_analysis    # regenerate the categorized write-up
+python -m eval.run_benchmark              # re-run (resumes from eval/benchmark_results.json)
+python -m eval.baseline_findocgpt_only    # the FinDocGPT-alone comparison baseline
+python -m eval.failure_analysis           # regenerate the categorized write-up
 ```
+
+**See [`RESULTS.md`](RESULTS.md) for the full head-to-head comparison against
+calling FinDocGPT directly (the key result), resume bullet points, and every
+bug found and fixed while building this eval harness.**
 
 ## Setup
 

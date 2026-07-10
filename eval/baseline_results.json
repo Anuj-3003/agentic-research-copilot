@@ -1,0 +1,165 @@
+{
+  "summary": {
+    "single_hop": {
+      "n": 8,
+      "avg_correctness": 1.0,
+      "hallucination_rate": 0.0
+    },
+    "multi_hop": {
+      "n": 6,
+      "avg_correctness": 0.583,
+      "hallucination_rate": 0.0
+    },
+    "out_of_scope": {
+      "n": 4,
+      "avg_correctness": 1.0,
+      "hallucination_rate": 0.0
+    }
+  },
+  "per_question": [
+    {
+      "question": "What was the federal funds rate target range set at the January 2026 FOMC meeting?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The federal funds rate target range was set at 3-1/2 to 3-3/4 percent."
+    },
+    {
+      "question": "What was the federal funds rate target range set at the March 2026 FOMC meeting?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The federal funds rate target range was set at 3-1/2 to 3-3/4 percent."
+    },
+    {
+      "question": "What interest rate did the Federal Reserve set on reserve balances following the January 2026 meeting?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The interest rate paid on reserve balances was maintained at 3.65 percent."
+    },
+    {
+      "question": "What was the ECB's deposit facility rate in March 2026?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The ECB's deposit facility rate remained unchanged at 2.00% in March 2026."
+    },
+    {
+      "question": "What did the ECB project for euro area headline inflation in 2026?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "2.6 per cent in 2026"
+    },
+    {
+      "question": "What rate does the Fed's standing overnight repurchase agreement operate at?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "3.75 percent."
+    },
+    {
+      "question": "How did the FOMC's dissenting votes differ between the January and March 2026 meetings?",
+      "category": "multi_hop",
+      "correctness": 0.5,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The dissenting votes differed between the January and March 2026 meetings in that Stephen I. Miran voted against lowering the target range for the federal funds rate by 1/4 percentage point at the January meeting, but he was the only one to vote against this action at the March meeting."
+    },
+    {
+      "question": "How did the FOMC's statement language about geopolitical risk change between January and March 2026?",
+      "category": "multi_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The FOMC's statement language about geopolitical risk changed between January and March 2026 by mentioning the implications of developments in the Middle East for the U.S. economy as uncertain in March, but not explicitly discussing it in January."
+    },
+    {
+      "question": "What did the central bank say about cryptocurrency regulation?",
+      "category": "out_of_scope",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "There is no mention of cryptocurrency regulation in the provided context."
+    },
+    {
+      "question": "What was the Bank of Japan's interest rate decision in March 2026?",
+      "category": "out_of_scope",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The interest rate decision of the Bank of Japan in March 2026 could not be determined from the provided context."
+    },
+    {
+      "question": "What was the price of gold in March 2026 according to the FOMC statement?",
+      "category": "out_of_scope",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The price of gold in March 2026 was not mentioned in the provided context."
+    },
+    {
+      "question": "What did the ECB say about the Federal Reserve's balance sheet runoff pace?",
+      "category": "out_of_scope",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "There is no mention of the Federal Reserve's balance sheet runoff pace in the provided context."
+    },
+    {
+      "question": "Who dissented from the FOMC's January 2026 policy decision?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "Stephen I. Miran and Christopher J. Waller dissented from the FOMC's January 2026 policy decision."
+    },
+    {
+      "question": "Who dissented from the FOMC's March 2026 policy decision?",
+      "category": "single_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "Stephen I. Miran dissented from the FOMC's March 2026 policy decision."
+    },
+    {
+      "question": "Did the Fed change the federal funds rate target range between January and March 2026?",
+      "category": "multi_hop",
+      "correctness": 0.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "Yes, the Fed changed the federal funds rate target range between January and March 2026."
+    },
+    {
+      "question": "How did the ECB's March 2026 policy stance compare to the Fed's March 2026 policy stance?",
+      "category": "multi_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The ECB's March 2026 policy stance was to keep the three key interest rates unchanged, determined to ensure that inflation stabilises at the 2% target in the medium term. The war in the Middle East has made the outlook significantly more uncertain, creating upside risks for inflation and downside risks for economic growth."
+    },
+    {
+      "question": "Compare the interest rate on reserve balances in January 2026 to March 2026.",
+      "category": "multi_hop",
+      "correctness": 1.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The interest rate on reserve balances was maintained at 3.65 percent in both January 2026 (fomc_2026_01.pdf, p.3) and March 2026 (fomc_2026_03.pdf, p.3)."
+    },
+    {
+      "question": "How did the ECB's inflation projections for 2026 compare to its growth projections for 2026?",
+      "category": "multi_hop",
+      "correctness": 0.0,
+      "hallucinated": false,
+      "error": null,
+      "final_output": "The ECB's inflation projections for 2026 were higher than its growth projections for 2026."
+    }
+  ]
+}
