@@ -1,0 +1,110 @@
+[
+  {
+    "question": "What was the federal funds rate target range set at the January 2026 FOMC meeting?",
+    "category": "single_hop",
+    "expected_facts": [["3-1/2 to 3-3/4 percent", "3.5 to 3.75 percent", "3-1/2 percent to 3-3/4 percent"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What was the federal funds rate target range set at the March 2026 FOMC meeting?",
+    "category": "single_hop",
+    "expected_facts": [["3-1/2 to 3-3/4 percent", "3.5 to 3.75 percent", "3-1/2 percent to 3-3/4 percent"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What interest rate did the Federal Reserve set on reserve balances following the January 2026 meeting?",
+    "category": "single_hop",
+    "expected_facts": [["3.65 percent", "3.65%"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What was the ECB's deposit facility rate in March 2026?",
+    "category": "single_hop",
+    "expected_facts": [["2.00 percent", "2.00%", "2 percent", "2%"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "Who dissented from the FOMC's January 2026 policy decision?",
+    "category": "single_hop",
+    "expected_facts": [["Miran"], ["Waller"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "Who dissented from the FOMC's March 2026 policy decision?",
+    "category": "single_hop",
+    "expected_facts": [["Miran"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What did the ECB project for euro area headline inflation in 2026?",
+    "category": "single_hop",
+    "expected_facts": [["2.6 percent", "2.6%", "2.6 per cent"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What rate does the Fed's standing overnight repurchase agreement operate at?",
+    "category": "single_hop",
+    "expected_facts": [["3.75 percent", "3.75%"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "Did the Fed change the federal funds rate target range between January and March 2026?",
+    "category": "multi_hop",
+    "expected_facts": [["unchanged", "did not change", "same", "no change", "remained"]],
+    "min_tool_calls": 2
+  },
+  {
+    "question": "How did the FOMC's dissenting votes differ between the January and March 2026 meetings?",
+    "category": "multi_hop",
+    "expected_facts": [["Miran"], ["Waller"]],
+    "min_tool_calls": 2
+  },
+  {
+    "question": "How did the FOMC's statement language about geopolitical risk change between January and March 2026?",
+    "category": "multi_hop",
+    "expected_facts": [["Middle East"]],
+    "min_tool_calls": 2
+  },
+  {
+    "question": "How did the ECB's March 2026 policy stance compare to the Fed's March 2026 policy stance?",
+    "category": "multi_hop",
+    "expected_facts": [["unchanged", "held", "steady", "kept", "maintain"]],
+    "min_tool_calls": 2
+  },
+  {
+    "question": "Compare the interest rate on reserve balances in January 2026 to March 2026.",
+    "category": "multi_hop",
+    "expected_facts": [["3.65"]],
+    "min_tool_calls": 2
+  },
+  {
+    "question": "How did the ECB's inflation projections for 2026 compare to its growth projections for 2026?",
+    "category": "multi_hop",
+    "expected_facts": [["2.6"], ["0.9"]],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What did the central bank say about cryptocurrency regulation?",
+    "category": "out_of_scope",
+    "expected_facts": [],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What was the Bank of Japan's interest rate decision in March 2026?",
+    "category": "out_of_scope",
+    "expected_facts": [],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What was the price of gold in March 2026 according to the FOMC statement?",
+    "category": "out_of_scope",
+    "expected_facts": [],
+    "min_tool_calls": 1
+  },
+  {
+    "question": "What did the ECB say about the Federal Reserve's balance sheet runoff pace?",
+    "category": "out_of_scope",
+    "expected_facts": [],
+    "min_tool_calls": 1
+  }
+]
