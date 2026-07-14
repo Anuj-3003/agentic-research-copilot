@@ -107,12 +107,3 @@ deciding, plus an explicit "paraphrasing isn't embellishment" rule) rather
 than switching to a paid judge -- see `agent/self_critic.py`'s docstring for
 the full story. `LLM_BACKEND=claude` is available as a drop-in upgrade if
 judgment quality becomes a bottleneck again.
-
-## Not built yet (see guide.md Phase 8)
-
-- Live deployment (Docker image exists, not yet pushed/deployed anywhere)
-- CI (eval-on-push needs either a hosted Ollama + FinDocGPT reachable from
-  the CI runner, or LLM_BACKEND=claude for CI-only judging -- free-tier CI
-  runners can't run Ollama, the same constraint FinDocGPT's own README
-  already flags for its own deployment)
-- Additional tools beyond FinDocGPT (calculator/code-exec, etc.)
